@@ -97,18 +97,7 @@
             </param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
-     </servlet>
-     
- <!-- allow logging events from admin --> 
-<!--        <servlet> -->
-<!--         <servlet-name>remoteLogging</servlet-name> -->
-<!--         <servlet-class>org.broadleafcommerce.common.logging.Log4JRemoteGwtLoggingServlet</servlet-class> -->
-<!--     </servlet> -->
-    
-<!--     <servlet-mapping> -->
-<!--         <servlet-name>remoteLogging</servlet-name> -->
-<!--         <url-pattern>/**/remote_logging</url-pattern> -->
-<!--     </servlet-mapping> -->
+    </servlet>
     
     <!-- specify the url pattern that will engage spring mvc -->
     <servlet-mapping>
