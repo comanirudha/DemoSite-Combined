@@ -11,6 +11,7 @@
     <url>http://www.blc-archetype.com</url>
     <properties>
         <blc.version>2.2.0-SNAPSHOT</blc.version>
+        <blc.i18n.version>1.0.0-SNAPSHOT</blc.i18n.version>
         <blc.pricelist.version>1.0.1-SNAPSHOT</blc.pricelist.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <gwt.version>2.4.0</gwt.version>
@@ -28,8 +29,7 @@
             <plugins>
                 <plugin>
                     <!-- Needed for Eclipse Indigo -->
-                    <!-- This plugin does not actually exist, but is instead read by Eclipse 
-                        for configuration purposes -->
+                    <!-- This plugin does not actually exist, but is instead read by Eclipse for configuration purposes -->
                     <groupId>org.eclipse.m2e</groupId>
                     <artifactId>lifecycle-mapping</artifactId>
                     <version>1.0.0</version>
@@ -151,8 +151,7 @@
                     <configuration>
                         <excludeDefaultDirectories>true</excludeDefaultDirectories>
                         <filesets>
-                            <!-- delete directories that will be generated when you start the 
-                                develpment server/client in eclipse -->
+                            <!-- delete directories that will be generated when you start the develpment server/client in eclipse -->
                             <fileset>
                                 <directory>target</directory>
                                 <includes>
@@ -242,12 +241,19 @@
             </dependency>
             <dependency>
                 <groupId>com.broadleafcommerce</groupId>
+                <artifactId>broadleaf-i18n</artifactId>
+                <version>${blc.i18n.version}</version>
+                <type>jar</type>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.broadleafcommerce</groupId>
                 <artifactId>broadleaf-pricelist</artifactId>
                 <version>${blc.pricelist.version}</version>
                 <type>jar</type>
                 <scope>compile</scope>
             </dependency>
-
+            
             <!-- Other dependencies -->
             <dependency>
                 <groupId>org.hsqldb</groupId>

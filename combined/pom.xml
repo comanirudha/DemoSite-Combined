@@ -254,5 +254,9 @@
             <groupId>com.broadleafcommerce</groupId>
             <artifactId>broadleaf-pricelist</artifactId>
         </dependency>
+         <dependency>
+            <groupId>com.broadleafcommerce</groupId>
+            <artifactId>broadleaf-i18n</artifactId>
+        </dependency>
     </dependencies>
 </project>

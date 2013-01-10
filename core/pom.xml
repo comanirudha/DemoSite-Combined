@@ -42,9 +42,13 @@
             <groupId>org.broadleafcommerce</groupId>
             <artifactId>broadleaf-profile</artifactId>
         </dependency>
-                <dependency>
+            <dependency>
             <groupId>com.broadleafcommerce</groupId>
             <artifactId>broadleaf-pricelist</artifactId>
+        </dependency>
+            <dependency>
+            <groupId>com.broadleafcommerce</groupId>
+            <artifactId>broadleaf-i18n</artifactId>
         </dependency>
     </dependencies>
 </project>
