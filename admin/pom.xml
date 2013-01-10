@@ -284,5 +284,9 @@
             <groupId>com.broadleafcommerce</groupId>
             <artifactId>broadleaf-i18n</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.broadleafcommerce</groupId>
+            <artifactId>broadleaf-advanced-search</artifactId>
+        </dependency>
     </dependencies>
 </project>
