@@ -13,6 +13,7 @@
         <blc.version>2.2.0-SNAPSHOT</blc.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <gwt.version>2.4.0</gwt.version>
+        <blc.advancedsearch.version>1.0.0-SNAPSHOT</blc.advancedsearch.version>
     </properties>
     <description>My Company's eCommerce Website</description>
     <repositories>
@@ -176,7 +177,7 @@
             <dependency>
                 <groupId>org.broadleafcommerce</groupId>
                 <artifactId>broadleaf-advanced-search</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>${blc.advancedsearch.version}</version>
                 <type>jar</type>
                 <scope>compile</scope>
             </dependency>
