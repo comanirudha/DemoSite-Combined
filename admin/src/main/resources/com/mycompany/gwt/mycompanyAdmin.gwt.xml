@@ -7,7 +7,7 @@
     <inherits name="org.broadleafcommerce.openadmin.userModule" />
     <inherits name="org.broadleafcommerce.cms.admin.contentManagementModule" />
     <inherits name="com.broadleafcommerce.pricelist.admin.priceListModule" />
-    <inherits name="com.broadleafcommerce.i18n.admin.i18nModule" />
+    <inherits name="org.broadleafcommerce.i18n.admin.i18nModule" />
     <inherits name="com.broadleafcommerce.search.admin.searchModule" />
 
     <inherits name="com.google.gwt.core.CompilerParameters"/>
