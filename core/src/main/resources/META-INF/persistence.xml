@@ -5,7 +5,7 @@
              version="2.0">
              
     <persistence-unit name="blPU" transaction-type="RESOURCE_LOCAL">
-            <class>com.mycompany.domain.MyAdvancedOfferImpl</class>
+         
         <non-jta-data-source>jdbc/web</non-jta-data-source>
         <exclude-unlisted-classes/>
     </persistence-unit>
