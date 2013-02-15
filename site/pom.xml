@@ -115,7 +115,7 @@
             <artifactId>broadleaf-framework-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.broadleafcommerce</groupId>
+            <groupId>org.broadleafcommerce</groupId>
             <artifactId>broadleaf-i18n</artifactId>
         </dependency>
         <dependency>
