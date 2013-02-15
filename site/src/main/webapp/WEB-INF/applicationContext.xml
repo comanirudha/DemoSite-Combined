@@ -144,7 +144,7 @@
     <bean id="blUpdateCartServiceExtensionManager" class="org.broadleafcommerce.core.web.service.UpdateCartServiceExtensionManager">
         <property name="listeners">
             <list>
-<!--                 <bean class="com.broadleafcommerce.pricelist.extension.PriceListUpdateCartServiceExtensionListener" /> -->
+                <bean class="com.broadleafcommerce.pricelist.extension.PriceListUpdateCartServiceExtensionListener" />
             </list>
         </property>
     </bean>
@@ -152,7 +152,9 @@
     <bean id="blSolrSearchServiceExtensionManager" class="org.broadleafcommerce.core.search.service.solr.SolrSearchServiceExtensionManager">
         <property name="listeners">
             <list>
-<!--                 <bean class="com.broadleafcommerce.pricelist.extension.PriceListSolrSearchServiceExtensionListener" /> -->
+                <bean class="com.broadleafcommerce.pricelist.extension.PriceListSolrSearchServiceExtensionListener">
+                    <property name="indexPriceLists" value="true" />
+                </bean>
             </list>
         </property>
     </bean>
@@ -160,7 +162,7 @@
     <bean id="blOrderServiceExtensionManager" class="org.broadleafcommerce.core.order.service.OrderServiceExtensionManager">
         <property name="listeners">
             <list>
-<!--                 <bean class="com.broadleafcommerce.pricelist.extension.PriceListOrderServiceExtensionListener" /> -->
+                <bean class="com.broadleafcommerce.pricelist.extension.PriceListOrderServiceExtensionListener" />
             </list>
         </property>
     </bean>
@@ -168,7 +170,7 @@
     <bean id="blOrderDaoExtensionManager" class="org.broadleafcommerce.core.order.dao.OrderDaoExtensionManager">
         <property name="listeners">
             <list>
-<!--                 <bean class="com.broadleafcommerce.pricelist.extension.PriceListOrderDaoExtensionListener" /> -->
+                <bean class="com.broadleafcommerce.pricelist.extension.PriceListOrderDaoExtensionListener" />
             </list>
         </property>
     </bean>
@@ -176,7 +178,7 @@
     <bean id="blOfferServiceExtensionManager" class="org.broadleafcommerce.core.offer.service.OfferServiceExtensionManager">
         <property name="listeners">
             <list>
-<!--                 <bean class="com.broadleafcommerce.pricelist.extension.PriceListOfferServiceExtensionListener" /> -->
+                <bean class="com.broadleafcommerce.pricelist.extension.PriceListOfferServiceExtensionListener" />
             </list>
         </property>
     </bean>
