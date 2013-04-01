@@ -46,6 +46,5 @@
           <groupId>com.broadleafcommerce</groupId>
           <artifactId>broadleaf-advanced-offer</artifactId>
          </dependency>
-        
     </dependencies>
 </project>

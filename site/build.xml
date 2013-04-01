@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="website(advOffers)" default="build-app" basedir="."
+<project name="website" default="build-app" basedir="."
     xmlns:artifact="antlib:org.apache.maven.artifact.ant"
     xmlns:rsel="antlib:org.apache.tools.ant.types.resources.selectors">
     
@@ -145,6 +145,7 @@
         <!--<property name="my.app.context" location="src/main/webapp/WEB-INF/applicationContext.xml"/>-->
         <taskdef name="hibernatetool" classname="org.broadleafcommerce.common.util.sql.HibernateToolTask" classpathref="build.runtime.classpath"/>
         <hibernatetool destDir="target/sql/create" combinePersistenceUnits="false" refineFileNames="true">
+            <classPathApplicationContext path="bl-framework-web-applicationContext.xml"/>
             <!--add in additional persistence configuration related to the framework -->
             <classPathApplicationContext path="bl-framework-applicationContext-persistence.xml"/>
             <!--add in additional persistence configuration related to common -->

@@ -28,6 +28,10 @@
     <sec:http pattern="/fonts/**" security="none"/>
     <sec:http pattern="/img/**" security="none"/>
     <sec:http pattern="/admin/login" security="none" />
+    <sec:http pattern="/admin/forgotUsername" security="none" />
+    <sec:http pattern="/admin/forgotPassword" security="none" />
+    <sec:http pattern="/admin/changePassword" security="none" />
+    <sec:http pattern="/admin/resetPassword" security="none" />
     <!-- This also goes for static assets delivered by the application -->
     <sec:http pattern="/**/${asset.server.url.prefix.internal}/**" security="none" />       
 
@@ -149,7 +153,6 @@
         <!-- Specify our custom filters -->
         <sec:custom-filter ref="blCsrfFilter" before="FORM_LOGIN_FILTER"/>
         <sec:custom-filter ref="blCustomerStateFilter" after="REMEMBER_ME_FILTER"/>
-        <sec:custom-filter ref="blCartStateFilter" before="ANONYMOUS_FILTER"/>
         <sec:custom-filter ref="blSessionFixationProtectionFilter" before="SESSION_MANAGEMENT_FILTER"/>
     </sec:http>
 

@@ -24,9 +24,6 @@
         <logger name="org.springframework.web.servlet">
         <level value="warn" />
     </logger>
-    <logger name="org.broadleafcommerce.common.config.RuntimeEnvironmentPropertiesConfigurer">
-        <level value="error" />
-    </logger>
     <logger name="org.hibernate">
         <level value="warn" />
     </logger>

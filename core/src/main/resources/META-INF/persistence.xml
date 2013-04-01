@@ -5,7 +5,6 @@
              version="2.0">
              
     <persistence-unit name="blPU" transaction-type="RESOURCE_LOCAL">
-         
         <non-jta-data-source>jdbc/web</non-jta-data-source>
         <exclude-unlisted-classes/>
     </persistence-unit>

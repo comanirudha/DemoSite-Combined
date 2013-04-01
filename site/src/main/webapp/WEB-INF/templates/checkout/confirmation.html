@@ -18,7 +18,7 @@
                 <th align="left"><span th:text="#{cart.item}">Item</span></th>
                 <th><span th:text="#{cart.quantity}">Quantity</span></th>
                 <th> <span th:text="#{cart.price}">Price</span> <span class="small" th:text="#{cart.each}">(each)</span></th>
-                <th> <span th:text="#{cart.discount}">Discount</span> <span class="small" th:text="#{cart.each}">(each)</span></th>
+                <th> <span th:text="#{cart.totalSavings}">Total Savings</span></th>
                 <th><span th:text="#{cart.total}">Total</span></th>
             </tr>
             </thead>
@@ -35,9 +35,11 @@
                 <td align="center" th:text="*{quantity}"></td>
                 <td align="center" blc:price="*{price}"></td>
                 <td align="center" th:if="*{adjustmentValue.zero}">---</td>
-                <td align="center" class="discount" th:unless="*{adjustmentValue.zero}" blc:price="*{adjustmentValue}" ></td>
-
-                <td align="center" class="value" blc:price="*{price.multiply(quantity)}"></td>
+                <td align="center" class="discount" th:unless="*{adjustmentValue.zero}" >
+                  <span  align="center"  blc:price="*{totalAdjustmentValue}" class="promotion" ></span>
+                     <div class="productOptions" th:substituteby="catalog/partials/offers :: offers"/>
+                </td>
+                <td align="center" class="value" blc:price="*{totalPrice}"></td>
             </tr>
             </tbody>
         </table>
@@ -97,9 +99,15 @@
         
         <div class="fulfillment_option" th:object="${order.fulfillmentGroups[0]}" th:inline="text" th:unless="${#lists.size(order.fulfillmentGroups) > 1}">
             <div class="left_content">
-                <address>
+                <address th:if="*{address.phonePrimary != null}">
                     [[*{address.firstName}]]&nbsp;[[*{address.lastName}]]<br/>
-                    [[*{address.primaryPhone}]]<br th:if="!*{#strings.isEmpty(address.primaryPhone)}"/>
+                    [[*{address.phonePrimary.phoneNumber}]]<br/>
+                    [[*{address.addressLine1}]]<br/>
+                    [[*{address.addressLine2}]]<br th:if="!*{#strings.isEmpty(address.addressLine2)}"/>
+                    [[*{address.city}]],&nbsp;[[*{address.state.abbreviation}]]&nbsp;[[*{address.postalCode}]]<br/>
+                </address>
+                <address th:if="*{address.phonePrimary == null}">
+                    [[*{address.firstName}]]&nbsp;[[*{address.lastName}]]<br/>
                     [[*{address.addressLine1}]]<br/>
                     [[*{address.addressLine2}]]<br th:if="!*{#strings.isEmpty(address.addressLine2)}"/>
                     [[*{address.city}]],&nbsp;[[*{address.state.abbreviation}]]&nbsp;[[*{address.postalCode}]]<br/>
@@ -119,9 +127,15 @@
 
         <div class="payment_method" th:each="paymentInfo : ${order.paymentInfos}" th:object="${paymentInfo}" th:inline="text">
             <div class="left_content">
-                <address>
+                <address th:if="*{address.phonePrimary != null}">
                     [[*{address.firstName}]]&nbsp;[[*{address.lastName}]]<br/>
-                    [[*{address.primaryPhone}]]<br th:if="!*{#strings.isEmpty(address.primaryPhone)}"/>
+                    [[*{address.phonePrimary.phoneNumber}]]<br/>
+                    [[*{address.addressLine1}]]<br/>
+                    [[*{address.addressLine2}]]<br th:if="!*{#strings.isEmpty(address.addressLine2)}"/>
+                    [[*{address.city}]],&nbsp;[[*{address.state.abbreviation}]]&nbsp;[[*{address.postalCode}]]<br/>
+                </address>
+                <address th:if="*{address.phonePrimary == null}">
+                    [[*{address.firstName}]]&nbsp;[[*{address.lastName}]]<br/>
                     [[*{address.addressLine1}]]<br/>
                     [[*{address.addressLine2}]]<br th:if="!*{#strings.isEmpty(address.addressLine2)}"/>
                     [[*{address.city}]],&nbsp;[[*{address.state.abbreviation}]]&nbsp;[[*{address.postalCode}]]<br/>
