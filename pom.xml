@@ -175,7 +175,7 @@
 
             <!--Broadleaf libraries -->
             <dependency>
-                <groupId>org.broadleafcommerce</groupId>
+                <groupId>com.broadleafcommerce</groupId>
                 <artifactId>broadleaf-advanced-search</artifactId>
                 <version>${blc.advancedsearch.version}</version>
                 <type>jar</type>
