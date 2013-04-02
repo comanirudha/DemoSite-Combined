@@ -19,7 +19,9 @@
         http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
         
     <context:load-time-weaver/>
-        
+
+    <context:component-scan base-package="com.mycompany.admin.service" />
+
     <bean id="blConfiguration" class="org.broadleafcommerce.common.config.RuntimeEnvironmentPropertiesConfigurer" />
 
     <bean id="blMergedDataSources" class="org.springframework.beans.factory.config.MapFactoryBean">
@@ -123,15 +125,15 @@
     
     <bean id="blPrecompressedArtifactFilter" class="org.broadleafcommerce.common.web.util.PrecompressedArtifactFilter"/>
 
-    <bean id="resourceBundleExtensionPoint" class="org.broadleafcommerce.common.util.ResourceBundleExtensionPoint" />
-    <bean id="messageSource"
-          class="org.broadleafcommerce.common.util.BLResourceBundleMessageSource">
-        <constructor-arg>
+    <bean id="messageSource" class="org.broadleafcommerce.common.util.BroadleafMergeResourceBundleMessageSource">
+        <!-- Fallback to use the default message in the admin. This will ensure that client-specific friendly
+            names are not required to appear in an internationalized properties file -->
+        <property name="useCodeAsDefaultMessage" value="true" />
+        <property name="basenames">
             <list>
-                <value>messages-admin</value>
+                <value>classpath:messages-admin</value>
             </list>
-        </constructor-arg>
-        <constructor-arg ref="resourceBundleExtensionPoint" />
+        </property>
     </bean>
 
 </beans>

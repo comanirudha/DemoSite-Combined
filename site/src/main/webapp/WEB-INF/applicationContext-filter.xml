@@ -30,7 +30,8 @@
             <sec:filter-chain pattern="/**" filters="
                blURLHandlerFilter,
                blRulesPriceListRequestFilter,
-               blPriceListDynamicSkuPricingFilter"/>
+               blPriceListDynamicSkuPricingFilter,
+               blCartStateFilter"/>
         </sec:filter-chain-map>
     </bean>
 

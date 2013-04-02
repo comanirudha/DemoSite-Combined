@@ -30,6 +30,7 @@
                blAdminSandBoxFilter"/>
             <sec:filter-chain pattern="/**" filters="
                blURLHandlerFilter,
+               blCartStateFilter,
                blRulesPriceListRequestFilter,
                blPriceListDynamicSkuPricingFilter"/>
         </sec:filter-chain-map>
