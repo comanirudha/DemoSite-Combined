@@ -248,7 +248,7 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>com.broadleafcommerce</groupId>
+                <groupId>org.broadleafcommerce</groupId>
                 <artifactId>broadleaf-i18n</artifactId>
                 <version>${blc.i18n.version}</version>
                 <type>jar</type>
