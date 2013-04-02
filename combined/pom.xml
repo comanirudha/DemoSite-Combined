@@ -205,6 +205,10 @@
         </profile>
     </profiles>
     <dependencies>
+       <dependency>
+                <groupId>com.broadleafcommerce</groupId>
+                <artifactId>broadleaf-advanced-search</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.broadleafcommerce</groupId>
             <artifactId>broadleaf-admin-module</artifactId>
