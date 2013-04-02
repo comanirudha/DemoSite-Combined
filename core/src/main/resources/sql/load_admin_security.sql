@@ -393,8 +393,8 @@ INSERT INTO BLC_ADMIN_SECTION (ADMIN_SECTION_ID, ADMIN_MODULE_ID, NAME, SECTION_
 INSERT INTO BLC_ADMIN_SECTION (ADMIN_SECTION_ID, ADMIN_MODULE_ID, NAME, SECTION_KEY, URL, USE_DEFAULT_HANDLER, CEILING_ENTITY) VALUES (11, 4, 'User Management', 'UserManagement', '/user-management', FALSE, 'org.broadleafcommerce.openadmin.server.security.domain.AdminUser');
 INSERT INTO BLC_ADMIN_SECTION (ADMIN_SECTION_ID, ADMIN_MODULE_ID, NAME, SECTION_KEY, URL, USE_DEFAULT_HANDLER, CEILING_ENTITY) VALUES (12, 4, 'Role Management', 'RoleManagement', '/role-management', FALSE, 'org.broadleafcommerce.openadmin.server.security.domain.AdminRole');
 
-INSERT INTO BLC_ADMIN_SECTION (ADMIN_SECTION_ID, ADMIN_MODULE_ID, NAME, SECTION_KEY, URL, USE_DEFAULT_HANDLER) VALUES (20, 1, 'Search Facet', 'SearchFacet', '/search-facet', TRUE);
-INSERT INTO BLC_ADMIN_SECTION (ADMIN_SECTION_ID, ADMIN_MODULE_ID, NAME, SECTION_KEY, URL, USE_DEFAULT_HANDLER) VALUES (21, 1, 'Search Redirect', 'SearchRedirect', '/search-redirect', TRUE);
+INSERT INTO BLC_ADMIN_SECTION (ADMIN_SECTION_ID, CEILING_ENTITY, ADMIN_MODULE_ID, NAME, SECTION_KEY, URL, USE_DEFAULT_HANDLER) VALUES (20, 'org.broadleafcommerce.core.search.domain.SearchFacet', 1, 'Search Facet', 'SearchFacet', '/search-facet', TRUE);
+INSERT INTO BLC_ADMIN_SECTION (ADMIN_SECTION_ID, CEILING_ENTITY, ADMIN_MODULE_ID, NAME, SECTION_KEY, URL, USE_DEFAULT_HANDLER) VALUES (21, 'org.broadleafcommerce.core.search.redirect.domain.SearchRedirect', 1, 'Search Redirect', 'SearchRedirect', '/search-redirect', TRUE);
 
 -- Sample Spring MVC Controller module
 INSERT INTO BLC_ADMIN_SECTION (ADMIN_SECTION_ID, ADMIN_MODULE_ID, NAME, SECTION_KEY, URL, USE_DEFAULT_HANDLER) VALUES (14, 4, 'Dashboard', 'Dashboard', '/dashboard', FALSE);
