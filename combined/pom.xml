@@ -253,5 +253,9 @@
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.broadleafcommerce</groupId>
+            <artifactId>broadleaf-advanced-search</artifactId>
+        </dependency>
     </dependencies>
 </project>
