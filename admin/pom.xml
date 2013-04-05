@@ -174,7 +174,7 @@
             <artifactId>validation-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.broadleafcommerce</groupId>
+            <groupId>com.broadleafcommerce</groupId>
             <artifactId>broadleaf-advanced-search</artifactId>
         </dependency>
     </dependencies>

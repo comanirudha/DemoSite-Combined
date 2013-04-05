@@ -13,7 +13,7 @@
         <blc.version>3.0.0-SNAPSHOT</blc.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <gwt.version>2.4.0</gwt.version>
-        <blc.advancedsearch.version>1.0.0-SNAPSHOT</blc.advancedsearch.version>
+        <blc.advancedsearch.version>1.1.0-SNAPSHOT</blc.advancedsearch.version>
     </properties>
     <description>My Company's eCommerce Website</description>
     <repositories>
@@ -175,7 +175,7 @@
 
             <!--Broadleaf libraries -->
             <dependency>
-                <groupId>org.broadleafcommerce</groupId>
+                <groupId>com.broadleafcommerce</groupId>
                 <artifactId>broadleaf-advanced-search</artifactId>
                 <version>${blc.advancedsearch.version}</version>
                 <type>jar</type>
