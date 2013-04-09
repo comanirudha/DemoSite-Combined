@@ -225,6 +225,10 @@
             <groupId>org.broadleafcommerce</groupId>
             <artifactId>broadleaf-common</artifactId>
         </dependency>
+         <dependency>
+          <groupId>com.broadleafcommerce</groupId>
+          <artifactId>broadleaf-advanced-offer</artifactId>
+         </dependency>
         <dependency>
             <groupId>com.mycompany</groupId>
             <artifactId>core</artifactId>

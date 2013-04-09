@@ -16,6 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <gwt.version>2.4.0</gwt.version>
         <blc.advancedsearch.version>1.1.0-SNAPSHOT</blc.advancedsearch.version>
+        <blc.advancedoffer.version>1.0.0-SNAPSHOT</blc.advancedoffer.version>
     </properties>
     <description>My Company's eCommerce Website</description>
     <repositories>
@@ -219,6 +220,13 @@
                 <type>jar</type>
                 <scope>compile</scope>
             </dependency>
+            <dependency>
+                <groupId>com.broadleafcommerce</groupId>
+                <artifactId>broadleaf-advanced-offer</artifactId>
+                 <version>${blc.advancedoffer.version}</version>
+                <type>jar</type>
+                <scope>compile</scope>
+            </dependency>            
             <dependency>
                 <groupId>org.broadleafcommerce</groupId>
                 <artifactId>broadleaf-admin-module</artifactId>

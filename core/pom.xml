@@ -50,5 +50,9 @@
             <groupId>org.broadleafcommerce</groupId>
             <artifactId>broadleaf-i18n</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.broadleafcommerce</groupId>
+            <artifactId>broadleaf-advanced-offer</artifactId>
+         </dependency>
     </dependencies>
 </project>

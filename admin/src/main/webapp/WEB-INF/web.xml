@@ -23,6 +23,8 @@
             classpath:/bl-pricelist-applicationContext.xml
             classpath:/bl-i18n-applicationContext.xml
             classpath:/bl-advanced-search-applicationContext.xml
+            classpath:/bl-advancedOffer-applicationContext.xml
+            classpath:/bl-advancedOffer-admin-applicationContext.xml
             classpath:/applicationContext.xml
             /WEB-INF/applicationContext-datasource.xml
             /WEB-INF/applicationContext-admin-security.xml

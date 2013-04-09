@@ -153,5 +153,9 @@
             <groupId>com.broadleafcommerce</groupId>
             <artifactId>broadleaf-advanced-search</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.broadleafcommerce</groupId>
+            <artifactId>broadleaf-advanced-offer</artifactId>
+        </dependency>
     </dependencies>
 </project>
