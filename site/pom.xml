@@ -118,10 +118,6 @@
             <artifactId>broadleaf-framework-web</artifactId>
         </dependency>
         <dependency>
-                <groupId>com.broadleafcommerce</groupId>
-                <artifactId>broadleaf-advanced-search</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.broadleafcommerce</groupId>
             <artifactId>broadleaf-i18n</artifactId>
         </dependency>
