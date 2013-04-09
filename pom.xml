@@ -11,7 +11,7 @@
     <url>http://www.blc-archetype.com</url>
     <properties>
         <blc.version>3.0.0-SNAPSHOT</blc.version>
-        <blc.i18n.version>1.0.0-SNAPSHOT</blc.i18n.version>
+        <blc.i18n.version>1.5.0-SNAPSHOT</blc.i18n.version>
         <blc.pricelist.version>1.0.0-SNAPSHOT</blc.pricelist.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <gwt.version>2.4.0</gwt.version>
